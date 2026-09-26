@@ -179,10 +179,10 @@ fi;
 USER_UNITS=();
 USER_UNIT_DIRECTORY="";
 # Invoked only by the EXIT trap below, which shellcheck cannot trace.
-# shellcheck disable=SC2329
+# shellcheck disable=SC2317,SC2329
 CLEANUP_DONE=0;
 # Invoked only by the EXIT trap below, which shellcheck cannot trace.
-# shellcheck disable=SC2329
+# shellcheck disable=SC2317,SC2329
 cleanup() {
   local unit;
   if [ "${CLEANUP_DONE}" -ne 0 ]; then
@@ -203,7 +203,7 @@ cleanup() {
 };
 # Invoked only by the signal traps below, which shellcheck cannot trace. It sets
 # an exit status and lets the EXIT trap do the single cleanup.
-# shellcheck disable=SC2329
+# shellcheck disable=SC2317,SC2329
 on_signal() {
   case "${1}" in
     INT)
