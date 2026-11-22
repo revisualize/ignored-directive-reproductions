@@ -59,7 +59,7 @@ asserted there: the gate's usage error, its refusal when the control breaks,
 and its refusal on a release before 250.
 
 A second recorded run, on systemd 259 (259.5-0ubuntu3.4), Ubuntu 26.04.1 LTS
-under WSL2, on 2026-09-24: every verifier exit status matched the article. The
+under WSL2, in September 2026: every verifier exit status matched the article. The
 three differences were diagnostic wording. For example, 255 prints
 `Unknown key name 'RestartSecc' in section 'Service'` and 259 prints
 `Unknown key 'RestartSecc' in section [Service]`. Section 7 ran there and read
